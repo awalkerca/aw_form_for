@@ -8,7 +8,7 @@ Create dry forms by reducing the boilerplate form field elements.
 add to your Gemfile and run the 'bundle' command to install it.
 
 ```ruby
-gem aw_form_for
+gem 'aw_form_for', :git => 'git://github.com/awalkerca/aw_form_for.git'
 ```
 
 **Requires Ruby 1.9.2 or later.**
