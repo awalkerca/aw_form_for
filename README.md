@@ -24,3 +24,9 @@ collection_check_box(attribute, records, record_id, record_name, *args)
 error_messages(error_message, *args)
 ```
 
+Additional Options available on fields:
+
+* container_class : class assigned to containing element. Includes 'field'  as well as any other added classes
+* mark_validation : boolean: whether or not to mark the field as required, if it is
+* label : label text to be used in place of default generated label (from humanized attribute)
+
