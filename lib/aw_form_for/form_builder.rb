@@ -71,7 +71,7 @@ module AWFormFor
 
 
       @template.content_tag :div, :class => container_classes.to_a.join(' ') do 
-        @template.content_tag(:label,(options[:label] || attribute.to_s.humanize), for: "#{@object_name}_#{attribute}") + 
+        @template.content_tag(:label,(options[:label] || attribute.to_s.titleize), for: "#{@object_name}_#{attribute}") + 
         block.call(attribute,*args)
       end  
     end
