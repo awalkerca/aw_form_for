@@ -15,6 +15,12 @@ module AWFormFor
       end
     end
 
+    def grouped_collection_select(attribute, collection, group_method, group_label, record_id, record_name,  *args)
+      build_field attribute, *args do
+        super(attribute, collection, group_method, group_label, record_id, record_name, *args)
+      end
+    end
+
     def collection_check_box(attribute, records, record_id, record_name, *args)
       build_field attribute,*args do
         @template.content_tag :ul, class: 'record_list' do
